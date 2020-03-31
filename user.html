@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userpage</title>
+</head>
+<style>
+ *{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.right{
+width:50%
+}
+
+.left{
+width:50%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+<br>
+<h1 style="background-color:lightgreen;padding:20px; text-align: center">User Page</h1>
+<br>
+<nav style="background-color:pink">
+    <a href="home.html">Home</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="contact.html">Contact Us</a> |
+</nav>
+<div class="column" >
+    <h2>Course Details</h2>
+    <hr>
+    <br><br>
+    <label for><b>Course Applied:</b></label>
+    <input input type="text"  name="cname" required>
+    <br><br>
+    <label for><b>Course Duration:</b></label>
+    <input input type="text"  name="cduration" required>
+    <br><br>
+    <label for><b>Course Start Date:</b></label>
+    <input type="text"  name="csdate" required><br>
+    <a href="changepassowrd">Change Password</a>
+    <button style="margin:15px;font-size:15px" type="Logout" >Logout</button>
+    <br>
+</div>
+<div class="column">
+    <h2 style="text-align: center">Fee Payment</h2>
+    <br><br>
+    <button onclick=" document.location = 'home.html'" style="margin:15px;font-size:15px" type="Fee Payment" value="">Fee Payment</button>
+</div>
+</body>
+</html>
